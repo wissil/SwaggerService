@@ -1,5 +1,7 @@
 package com.filip.custom.swagger.controllers;
 
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,7 +34,7 @@ public class SampleController {
 			response = Product.class,
 			responseContainer = "List")
     @RequestMapping(value = "/products", method= RequestMethod.GET, produces = "application/json")
-    public Iterable<Product> getAllProducts() {
+    public List<Product> getAllProducts() {
         return null;
     }
 	

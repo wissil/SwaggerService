@@ -27,7 +27,10 @@ public class SampleController {
 		return "Hello, client!";
 	}
 	
-	@ApiOperation(value = "View a list of available products", response = Iterable.class)
+	@ApiOperation(
+			value = "View a list of available products",
+			response = Product.class,
+			responseContainer = "List")
     @RequestMapping(value = "/products", method= RequestMethod.GET, produces = "application/json")
     public Iterable<Product> getAllProducts() {
         return null;

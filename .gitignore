@@ -1,6 +1,7 @@
 # Eclipse files #
 .settings/
 target/
+bin/
 generated/
 .classpath
 .settings

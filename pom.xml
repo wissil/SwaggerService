@@ -36,7 +36,7 @@
 						<apiSource>
 							<springmvc>true</springmvc>
 							<locations>
-								<location>com.filip.custom.swagger.controllers</location>
+								<location>com.filip.custom.swagger</location>
 							</locations>
 							<schemes>http,https</schemes>
 							<host>localhost:8080</host>
